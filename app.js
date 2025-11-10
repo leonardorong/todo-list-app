@@ -14,7 +14,7 @@ if(savedTasks) {
 
     const editBtn = document.createElement("button");
     editBtn.textContent = "Edit";
-    editBtn.style.marginLeft = "10px";
+    editBtn.style.marginLeft = "180px";
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
@@ -74,7 +74,7 @@ addBtn.addEventListener("click", function() {
 
     const editBtn = document.createElement("button");
     editBtn.textContent = "Edit";
-    editBtn.style.marginLeft = "10px"
+    editBtn.style.marginLeft = "180px"
 
     // Create delete button
     const deleteBtn = document.createElement("button");
