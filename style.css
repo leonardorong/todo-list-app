@@ -10,7 +10,6 @@ body{
   background:#f3f4f6;
   display:flex;
   justify-content:center;
-  align-items:flex-start;
   padding-top:60px;
 }
 
@@ -42,6 +41,7 @@ body{
   border:1px solid #ddd;
   border-radius:8px;
   font-size:15px;
+  outline: none;
 }
 
 .input-row button{
@@ -86,4 +86,44 @@ body{
   font-size:14px;
   cursor:pointer;
   color:#1d4ed8;
+}
+
+/* mobile screens */
+@media (max-width: 480px){
+  .todo-container{
+    width: 100%;
+    margin: 0 12px;
+    padding:20px;
+  }
+
+  .todo-container h2{
+    font-size:18px;
+  }
+
+  .input-row input{
+    font-size:14px;
+    padding:10px 12px;
+  }
+
+  .input-row button{
+    font-size:14px;
+    padding:10px 12px;
+  }
+
+  .todo-list li{
+    padding:10px 12px;
+    font-size:14px;
+  }
+
+  .task-actions button{
+    font-size:13px;
+  }
+}
+
+/* bigger phones & tablets */
+@media (min-width: 481px) and (max-width: 768px){
+  .todo-container{
+    width: 80%;
+    padding:24px;
+  }
 }
