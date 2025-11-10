@@ -1,0 +1,88 @@
+/* reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background:#f3f4f6;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding-top:60px;
+}
+
+/* main card */
+.todo-container{
+  width: 420px;
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* heading */
+.todo-container h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+/* input and button row */
+.input-row{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.input-row input{
+  flex:1;
+  padding:12px 14px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  font-size:15px;
+}
+
+.input-row button{
+  padding:12px 20px;
+  border:none;
+  background:#2563eb;
+  color:#fff;
+  border-radius:8px;
+  cursor:pointer;
+  transition:.2s;
+  font-weight:600;
+}
+
+.input-row button:hover{
+  background:#1d4ed8;
+}
+
+/* list */
+.todo-list li{
+  list-style:none;
+  background:#f9fafb;
+  padding:12px 14px;
+  border-radius:8px;
+  margin-bottom:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border:1px solid #e5e7eb;
+}
+
+/* completed task */
+.todo-list li.completed{
+  text-decoration:line-through;
+  opacity:.55;
+}
+
+/* delete btn */
+.todo-list li button{
+  background:transparent;
+  border:none;
+  font-size:14px;
+  cursor:pointer;
+  color:#dc2626;
+}
